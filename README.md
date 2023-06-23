@@ -65,8 +65,10 @@ python3 train.py
 
 To test it on a image:
 ```
-python3 val.py -i image.jpg
+python3 val.py
 ```
+
+It will open an interface and you can upload the image.
 
 ## Usage
 
