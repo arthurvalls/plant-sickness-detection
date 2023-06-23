@@ -8,7 +8,7 @@ The original owner of the dataset and research is [Pratik Kayal](https://github.
 
 The dataset consists of images of healthy and sick plants, along with labels indicating the type of sickness.
 
-To use it in the script **train.py** the dataset strutcture must be like this:
+To use it in the script **train.py** the dataset structure must be like this:
 
 ```
 dataset
@@ -49,10 +49,10 @@ dataset
             ├── sick_cherry1.jpg
             └── ...
 ```
+
 ## Research
 
 The research involves building a machine learning model to accurately detect plant sickness. 
-
 
 The code for training the model can be found in **train.py** and to test it on the **val.py**.
 
@@ -72,16 +72,20 @@ It will open an interface and you can upload the image.
 
 ## Usage
 
-To use this repository, simply clone or download it to your local machine. 
+To use this repository, simply clone or download it to your local machine.
 
-To install requirements:
+1. Create and activate a virtual environment:
+```
+python3 -m venv env
+source env/bin/activate
+```
 
+2. Install the required packages:
 ```
 pip3 install -r requirements.txt
 ```
 
-**PS:** In case you're using Linux and don't have Tkinter installed for the GUI:
-
+3. If you're using Linux and don't have Tkinter installed for the GUI:
 ```
 sudo apt-get install python3-tk
 ```
@@ -89,6 +93,7 @@ sudo apt-get install python3-tk
 You can then use the dataset to train your own machine learning model for plant sickness detection. Please reference [Pratik Kayal's repository](https://github.com/pratikkayal/PlantDoc-Dataset) if you use their dataset.
 
 ## Examples
+
 <div align="center" display="flex">
 Healthy plant:
 
@@ -97,6 +102,5 @@ Healthy plant:
 Sick plant:
 
 ![Sick plant](assets/sept_prediction.jpg)
-
 
 </div>

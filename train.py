@@ -5,7 +5,7 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.optimizers import Adam
 
 # Define o caminho para a pasta principal do conjunto de dados
-dataset_path = 'dataset'
+dataset_path = '../../dataset'
 
 # Define as dimensões da imagem e o tamanho do batch
 img_width, img_height = 150, 150
@@ -54,10 +54,10 @@ model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy']
 model.fit(
     train_generator,
     steps_per_epoch=train_generator.samples // batch_size,
-    epochs=3,
+    epochs=60,
     validation_data=validation_generator,
     validation_steps=validation_generator.samples // batch_size
 )
 
 # Salva o modelo
-model.save('model/plant.h5')
+model.save('model/plant_best_60.h5')
