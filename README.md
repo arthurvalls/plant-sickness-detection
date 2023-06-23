@@ -20,11 +20,11 @@ To use this repository, simply clone or download it to your local machine. You c
 <div align="center" display="flex">
 Healthy plant:
 
-![Example output image](planta_prediction.jpg)
+![Example output image](assets/planta_prediction.jpg)
 
 Sick plant:
 
-![Sick plant](sept_prediction.jpg)
+![Sick plant](assets/sept_prediction.jpg)
 
 
 </div>
