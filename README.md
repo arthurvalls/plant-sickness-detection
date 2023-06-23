@@ -72,7 +72,21 @@ It will open an interface and you can upload the image.
 
 ## Usage
 
-To use this repository, simply clone or download it to your local machine. You can then use the dataset to train your own machine learning model for plant sickness detection. Please reference [Pratik Kayal's repository](https://github.com/pratikkayal/PlantDoc-Dataset) if you use their dataset.
+To use this repository, simply clone or download it to your local machine. 
+
+To install requirements:
+
+```
+pip3 install -r requirements.txt
+```
+
+**PS:** In case you're using Linux and don't have Tkinter installed for the GUI:
+
+```
+sudo apt-get install python3-tk
+```
+
+You can then use the dataset to train your own machine learning model for plant sickness detection. Please reference [Pratik Kayal's repository](https://github.com/pratikkayal/PlantDoc-Dataset) if you use their dataset.
 
 ## Examples
 <div align="center" display="flex">
