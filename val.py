@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
 # Carrega o modelo treinado
-model = load_model('model/plant.h5')
+model = load_model('model/plant_90.h5')
 
 # Cria a interface
 window = tk.Tk()
