@@ -11,7 +11,7 @@ model = load_model('model/plant_best_50_epochs.h5')
 
 # Cria a interface
 window = tk.Tk()
-window.title("Plant Health Prediction")
+window.title("Previsão de Plantas Doentes")
 window.geometry("700x700")
 
 # Função para realizar upload de imagem
@@ -32,9 +32,9 @@ def upload_image():
 
         # Mostra o resultado da previsão da imagem
         if prediction < 0.5:
-            result_label.config(text=f"Healthy {100*(1-prediction[0][0]):.2f}%", fg="green")
+            result_label.config(text=f"Saudável: {100*(1-prediction[0][0]):.2f}%", fg="green")
         else:
-            result_label.config(text=f"Sick {(100*prediction[0][0]):.2f}%", fg="red")
+            result_label.config(text=f"Doente: {(100*prediction[0][0]):.2f}%", fg="red")
 
         # Converte e mostra a imagem 
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -44,7 +44,7 @@ def upload_image():
         image_label.config(image=img)
 
 # Cria o butao de upload
-upload_button = tk.Button(window, text="Upload", command=upload_image)
+upload_button = tk.Button(window, text="Teste uma imagem", command=upload_image)
 upload_button.pack(pady=10)
 
 # Mostra o resultado da previsão na interface
@@ -56,7 +56,7 @@ image_label = tk.Label(window)
 image_label.pack(pady=10)
 
 # Cria o butão para fechar a interface e o programa
-close_button = tk.Button(window, text="Close", command=window.destroy)
+close_button = tk.Button(window, text="Fechar", command=window.destroy)
 close_button.pack(pady=10)
 
 # Roda a inteface
