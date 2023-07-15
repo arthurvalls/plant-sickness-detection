@@ -59,7 +59,8 @@ model.compile(optimizer=Adam(learning_rate=0.001), loss='binary_crossentropy', m
 
 # Salva o modelo para visualizacao
 model.summary()
-visualkeras.layered_view(model).save('model.png')
+
+visualkeras.layered_view(model, legend=True).save('model.png')
 
 # Treina o modelo.
 model.fit(
