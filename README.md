@@ -1,6 +1,6 @@
 # Detecção de Doenças em Plantas
 
-Este repositório contém um conjunto de dados e uma pesquisa sobre detecção de doenças em plantas usando aprendizado de máquina.
+Este repositório contém um script que realiza a detecção de doenças em plantas usando aprendizado de máquina.
 
 O proprietário original do conjunto de dados e da pesquisa é [Pratik Kayal](https://github.com/pratikkayal/PlantDoc-Dataset), e este repositório serve como referência para o trabalho dele.
 
