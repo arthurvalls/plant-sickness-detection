@@ -1,15 +1,14 @@
-# Plant Sickness Detection
+# Detecção de Doenças em Plantas
 
-This repository contains a dataset and research on plant sickness detection using machine learning.
+Este repositório contém um conjunto de dados e uma pesquisa sobre detecção de doenças em plantas usando aprendizado de máquina.
 
-The original owner of the dataset and research is [Pratik Kayal](https://github.com/pratikkayal/PlantDoc-Dataset), and this repository serves as a reference to their work.
+O proprietário original do conjunto de dados e da pesquisa é [Pratik Kayal](https://github.com/pratikkayal/PlantDoc-Dataset), e este repositório serve como referência para o trabalho dele.
 
-## Dataset
+## Conjunto de Dados
 
-The dataset consists of images of healthy and sick plants, along with labels indicating the type of sickness.
+O conjunto de dados consiste em imagens de plantas saudáveis e doentes, juntamente com rótulos indicando o tipo de doença.
 
-To use it in the script **train.py** the dataset structure must be like this:
-
+Para usá-lo no script **train.py** a estrutura do conjunto de dados deve ser assim:
 ```
 dataset
 ├── train
@@ -50,57 +49,57 @@ dataset
             └── ...
 ```
 
-## Research
+## Pesquisa
 
-The research involves building a machine learning model to accurately detect plant sickness. 
+A pesquisa envolve a construção de um modelo de aprendizado de máquina para detectar com precisão doenças em plantas.
 
-The code for training the model can be found in **train.py** and to test it on the **val.py**.
+O código para treinar o modelo pode ser encontrado em **train.py** e para testá-lo em **val.py**.
 
-**PS:** The path for the *dataset* (for training) is hardcoded and must be changed accordingly.
+**PS:** O caminho para o *dataset* (para treinamento) está hardcorded e deve ser alterado adequadamente.
 
-To train:
+Para treinar:
 ```
 python3 train.py
 ```
 
-To test it on a image:
+Para testá-lo em uma imagem:
 ```
 python3 val.py
 ```
 
-It will open an interface and you can upload the image.
+Ele abrirá uma interface e você poderá fazer upload da imagem.
 
-## Usage
+## Uso
 
-To use this repository, simply clone or download it to your local machine.
+Para usar este repositório, basta cloná-lo ou baixá-lo para sua máquina local.
 
-1. Create and activate a virtual environment:
+1. Crie e ative um ambiente virtual:
 ```
 python3 -m venv env
 source env/bin/activate
 ```
 
-2. Install the required packages:
+2. Instale os pacotes necessários:
 ```
 pip3 install -r requirements.txt
 ```
 
-3. If you're using Linux and don't have Tkinter installed for the GUI:
+3. Se você estiver usando Linux e não tiver o Tkinter instalado para a GUI:
 ```
 sudo apt-get install python3-tk
 ```
 
-You can then use the dataset to train your own machine learning model for plant sickness detection. Please reference [Pratik Kayal's repository](https://github.com/pratikkayal/PlantDoc-Dataset) if you use their dataset.
+Você pode então usar o conjunto de dados para treinar seu próprio modelo de aprendizado de máquina para detecção de doenças em plantas. Por favor, faça referência ao [repositório de Pratik Kayal](https://github.com/pratikkayal/PlantDoc-Dataset) se você usar o conjunto de dados dele.
 
-## Examples
+## Exemplos
 
 <div align="center" display="flex">
-Healthy plant:
+Planta saudável:
 
-![Example output image](assets/planta_prediction.jpg)
+![Exemplo de imagem de saída](assets/planta_prediction.jpg)
 
-Sick plant:
+Planta doente:
 
-![Sick plant](assets/sept_prediction.jpg)
+![Planta doente](assets/sept_prediction.jpg)
 
 </div>
